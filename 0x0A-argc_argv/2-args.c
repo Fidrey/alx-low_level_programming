@@ -3,23 +3,18 @@
 
 /**
  * main - prints all arguments it receives
-
- * @argc: number of arguments
-
- * @argv: array of arguments
-
+ * @argc: argument count
+ * @argv: argument vector
  *
-
  * Return: Always 0 (Success)
-
  */
 int main(int argc, char *argv[])
 
 {
-	int i;
-	for (i = 0; i < argc; i++)
+	int c;
+	for (c = 0; c < argc; c++)
 	{
-		printf("%s\n", argv[i]);
+		printf("%s\n", argv[c]);
 	}
 	return (0);
 
