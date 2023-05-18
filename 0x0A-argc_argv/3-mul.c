@@ -4,15 +4,15 @@
 
 /**
   * main - prints the multiplication of two args numbers
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: always zero
- */
+  * @argc: argument count
+  * @argv: argument vector
+  * Return: always zero
+  */
 int main(int argc, char *argv[])
 
 {
 	int c1 = 0, c2 = 0;
+
 	if (argc == 3)
 	{
 		c1 = atoi(argv[1]);
