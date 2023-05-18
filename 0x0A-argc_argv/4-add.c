@@ -28,10 +28,10 @@ int main(int argc, char *argv[])
 					printf("Error\n");
 					return (1);
 				}
-			}	
+			}
 		sum += atoi(d);
 		    d++;
-		}	
+		}
 	printf("%d\n", sum);
 	}
 else
