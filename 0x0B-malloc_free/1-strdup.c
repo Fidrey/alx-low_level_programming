@@ -1,34 +1,36 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
-* _strdup - string duplicate to a new memory location
-* @str: char
-* description:_strdup duplicate to a memory location
-* return: 0
-*/
+ * _strdup - string duplicate to a new memory location
+ * @str: char
+ * description: _strdup duplicate to a memory location
+ * Return: always retun s
+ */
 
 char *_strdup(char *str)
 {
-char *trng;
-int t, r = 0;
+	int b = 0, d = 1;
+	char *s;
 
-if (str == NULL)
-return (NULL);
+	if (str == NULL)
+		return (NULL);
 
-t = 0;
-while (str[t] ! = "\0")
-t++;
-trng = malloc(sizeof(char) * t[1]);
+	while (str[d])
+	{
+		d++;
+	}
+	s = malloc((sizeof(char) * d) + 1);
 
-if (trng == NULL)
-return (NULL);
+	if (s == NULL)
+		return (NULL);
 
-for (r = 0; str[r]; r++)
+	while (b < d)
+	{
+		s[b] = str[b];
+		b++;
+	}
 
-trng[r] = str[r]
-return (trng);
+	s[b] = '\0';
+	return (s);
 }
-
-
