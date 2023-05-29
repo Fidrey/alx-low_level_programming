@@ -10,12 +10,19 @@
 
 char *create_array(unsigned int size, char c)
 {
-char *ptArray;
-unsigned int count;
-ptArray = malloc(size * sizeof(char));
-for (count = 0; count < size; count++)
-ptArray[count] = c;
-return (ptArray);
-if (size == 0 || ptArray == NULL)
-return (NULL);
+	unsigned int t;
+	char *s;
+
+	if (size == 0)
+		return (NULL);
+
+	s = malloc(size * sizeof(char));
+
+		if (s ==NLL)
+			return (NULL);
+	for (t =0; t < size; t++)
+	{
+		s[t] = c;
+	}
+	return (s);
 }
